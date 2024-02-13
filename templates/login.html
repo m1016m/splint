@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<body>
+    {% include 'header1.html' %}
+<div class="jumbotron mt-3">
+    <h1>Django AuthDev HomPage</h1>
+    <p class="lead">This example is a quick demo to illustrate how django authentication works.</p>
+    <a class="btn btn-lg btn-primary" href="#" role="button">登出 &#187;</a>
+	<p>還沒有帳號嗎? <a href="{% url 'Register' %}">註冊</a></p>
+</div>
+
+</body>
+{% endblock %}

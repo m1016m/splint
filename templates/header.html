@@ -1,0 +1,45 @@
+<header>
+    <div class='container'>    
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+      
+      {% load static %}
+      <img src="{% static 'img/logo.png' %}" width='155'></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Index' %}">主頁</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'Register' %}">註冊</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">登入</a>
+        </li>	
+        <li class="nav-item">
+          <a class="nav-link" href="#">聯絡我們</a>
+        </li>			
+      </ul>
+    
+    </div>
+  </nav>
+  
+    </div>
+  </header>
+<section id='intro'style="background: linear-gradient(45deg, rgb(128 127 67 / 90%), transparent) 20%, url(img/view.jpg) no-repeat center;background-size: cover;">
+<div class="jumbotron">
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <h1 class="display-4">職能治療的專長，副木設計與製作～</h1>
+        <p class="lead">職能治療是透過有目的的活動來治療病患，使其能夠藉由治療訓練達到功能上的獨立，以維持病患生理和心理上的健康，或維持及增進其社會角色之日常生活功能，進而提升生活品質</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
