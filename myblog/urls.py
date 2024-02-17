@@ -24,3 +24,8 @@ urlpatterns = [
     path('register', views.sign_on, name='Register'),
     path('content', views.content_on, name='Content'),
 ]
+
+from django.conf.urls.static import static
+from django.conf import settings
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL , document_root = settings.STATIC_ROOT)
