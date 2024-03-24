@@ -1,8 +1,28 @@
 {% extends "base.html" %}
-{% load static %}
-
-{% block content %}
-{% include 'header.html' %}
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>副木民眾版</title>
+    <style>
+      
+      .img{
+            background-size: contain;
+            max-width:100%;
+            height: auto;
+            object-fit: cover;
+            flex: 1;
+          }
+      
+    </style>
+       
+  </head>
+  <body>
+<div class="container">
+ 
+  {% block content %}
+  {% include 'header.html' %}
+<main class="container"> 
 <section id='second'>
   <div class="container">
     <div class='row'>
@@ -10,8 +30,9 @@
       <h3>加入學習平台，一起去認識副木</h3>
       <div class='row'>
         <div class='col-md-4 text-center'>
+          {% load static %}
           <img src="{% static 'img/france.jpg' %}">
-          <h5>搞手Danny</h5>
+          <h5>搞手Rehand</h5>
         </div>
         <div class='col-md-8 text-left'>
           <p class='lead'>副木製作是職能治療重要的臨床業務之一！</p>
@@ -21,64 +42,215 @@
       </div>
     </div>
   <div>
-  </div>
-  
-</section> 
-<section id='latest'>
-  
-  <div class="container">
-    <div class='row'>
-    <div class='col-md-12 text-center'>
-      <h3>副木教學</h3>
-      <div class='row'>
-        <div class='col-md-4 text-left'>
-          <div class='outer'>
-            <a href='#'>
-              <div class='upper'>
-              <img src="{% static 'img/h1.png' %}">
-              <div class='innertext'>
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        教學文章
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">手術後</h2>
+        <p class="blog-post-meta">March, 2024 by <a href="#">Rehand</a></p>
+        <p><h5>復健指引（依醫師指示做調整）0~6週</h5></p>
+        <p>1.副木固定(受傷的手指保持固定不動的位置)副木形式及照顧方式
+          副木形式-->指骨骨折固定原則是已將骨折位置之前後關節固定不動至骨頭癒合，不可靠近熱水、熱源</p>
+       
+        <p>2.副木本身具有彈性，如覺得太鬆或太緊，除了用黏扣帶可適度調整，也可將副木向外扳開或向內壓緊，以微調鬆緊度，副木穿戴以不晃動為原則。</p>
+       
+        <p>3.清潔時以一般清潔劑及清水輕拭髒污處，用水沖洗，擦乾即可再穿戴。</p>
+        <p>4.副木和所接觸肢體請保持清潔及乾燥。</p>
+            <p>5.對較幼小的孩子來說，照顧者也需考慮孩子的表達能力，而需要多注意孩子的不舒服反應，並時時檢查副木的擺位是否正確，有無造成壓力點。對還停留在口腔期會喜歡亂咬東西的孩子來說，要注意副木的任何配件是否會被咬下來，或有無毒性等。</p>
+            
+            <h2 class="mt-4">穿戴方式之圖片</h2>
+            
+            <div class="row mb-3 text-center">
+              <div class="col-6 col-sm-4 themed-grid-col">
+                <div class='outer'>
+                  <a href='#'>
+                    <div class='upper'>
+                      <svg width="250" height="250">
+                        <image x="0" y="0" width="250" height="250"
+                               xlink:href="https://source.unsplash.com/random/250x250"/>
+                      </svg>
+                    <div class='innertext'>
+                    </div>
+                    </div>
+                    <div class='lower'>
+                      <span><i class="fas fa-map-marker-alt"></i> 手指談崩</span><br>
+                      <span><i class="far fa-clock"></i> March, 2024 </span>
+                    </div>
+                  </a>
+                </div>
               </div>
+              <div class="col-6 col-sm-4 themed-grid-col">
+                <div class='outer'>
+                  <a href='#'>
+                    <div class='upper'>
+                      <svg width="250" height="250">
+                        <image x="0" y="0" width="250" height="250"
+                               xlink:href="https://source.unsplash.com/random/250x250"/>
+                      </svg>
+                    <div class='innertext'>
+                    </div>
+                    </div>
+                    <div class='lower'>
+                      <span><i class="fas fa-map-marker-alt"></i> 手指談崩</span><br>
+                      <span><i class="far fa-clock"></i> March, 2024 </span>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <div class='lower'>
-                <h3>上肢處理（副木篇） - </h3>
-                <span><i class="fas fa-map-marker-alt"></i> Test</span><br>
-                <span><i class="far fa-clock"></i> Nov 03, 2024 </span>
+              <div class="col-6 col-sm-4 themed-grid-col">
+                <div class='outer'>
+                  <a href='#'>
+                    <div class='upper'>
+                      <svg width="250" height="250">
+                        <image x="0" y="0" width="250" height="250"
+                               xlink:href="https://source.unsplash.com/random/250x250"/>
+                      </svg>
+                    <div class='innertext'>
+                    </div>
+                    </div>
+                    <div class='lower'>
+                      <span><i class="fas fa-map-marker-alt"></i> 手指談崩</span><br>
+                      <span><i class="far fa-clock"></i> March, 2024 </span>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </a>
-          </div>
+            </div>
+            <hr>
+        <h2 class="display-5 link-body-emphasis mb-1">手術後</h2>
+        <p class="blog-post-meta">March, 2024 by <a href="#">Mark</a></p>
+        <p><h5>復健指引（依醫師指示做調整）0~6週</h5></p>
+        <p>1.副木固定(受傷的手指保持固定不動的位置)副木形式及照顧方式
+          副木形式-->指骨骨折固定原則是已將骨折位置之前後關節固定不動至骨頭癒合，不可靠近熱水、熱源</p>
+       
+        <p>2.副木本身具有彈性，如覺得太鬆或太緊，除了用黏扣帶可適度調整，也可將副木向外扳開或向內壓緊，以微調鬆緊度，副木穿戴以不晃動為原則。</p>
+       
+        <p>3.清潔時以一般清潔劑及清水輕拭髒污處，用水沖洗，擦乾即可再穿戴。</p>
+        <p>4.副木和所接觸肢體請保持清潔及乾燥。</p>
+            <p>5.對較幼小的孩子來說，照顧者也需考慮孩子的表達能力，而需要多注意孩子的不舒服反應，並時時檢查副木的擺位是否正確，有無造成壓力點。對還停留在口腔期會喜歡亂咬東西的孩子來說，要注意副木的任何配件是否會被咬下來，或有無毒性等。</p>
+            <h2 class="mt-4">穿戴方式之圖片</h2>
+            
+            <div class="row mb-3 text-center">
+              <div class="col-6 col-sm-4 themed-grid-col">
+                <div class='outer'>
+                  <a href='#'>
+                    <div class='upper'>
+                      <svg width="250" height="250">
+                        <image x="0" y="0" width="250" height="250"
+                               xlink:href="https://source.unsplash.com/random/250x250"/>
+                      </svg>
+                    <div class='innertext'>
+                    </div>
+                    </div>
+                    <div class='lower'>
+                      <span><i class="fas fa-map-marker-alt"></i> 手指談崩</span><br>
+                      <span><i class="far fa-clock"></i> March, 2024 </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 themed-grid-col">
+                <div class='outer'>
+                  <a href='#'>
+                    <div class='upper'>
+                      <svg width="250" height="250">
+                        <image x="0" y="0" width="250" height="250"
+                               xlink:href="https://source.unsplash.com/random/250x250"/>
+                      </svg>
+                    <div class='innertext'>
+                    </div>
+                    </div>
+                    <div class='lower'>
+                      <span><i class="fas fa-map-marker-alt"></i> 手指談崩</span><br>
+                      <span><i class="far fa-clock"></i> March, 2024 </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-6 col-sm-4 themed-grid-col">
+                <div class='outer'>
+                  <a href='#'>
+                    <div class='upper'>
+                      <svg width="250" height="250">
+                        <image x="0" y="0" width="250" height="250"
+                               xlink:href="https://source.unsplash.com/random/250x250"/>
+                      </svg>
+                    <div class='innertext'>
+                    </div>
+                    </div>
+                    <div class='lower'>
+                      <span><i class="fas fa-map-marker-alt"></i> 手指談崩</span><br>
+                      <span><i class="far fa-clock"></i> March, 2024 </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <hr>
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">New feature</h2>
+        <p class="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
+
+        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+        <ul>
+          <li>First list item</li>
+          <li>Second list item with a longer description</li>
+          <li>Third list item to close it out</li>
+        </ul>
+        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+      </article>
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+        <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
+      </nav>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic">關於講師 Rehand</h4>
+          <p class="mb-0">本學習平台講授示範及指導動態副木的製作要點，適合生理職能治療的臨床工作者及醫師，尤其對平時較少有機會接觸動態副木製作的一般民眾是難得的學習機會！</p>
         </div>
-        <div class='col-md-4 text-left'>
-          <div class='outer'>
-            <a href='#'>
-              <div class='upper'>
-              <img src="{% static 'img/h1.png' %}">
-              <div class='innertext'>
-              </div>
-              </div>
-              <div class='lower'>
-                <h3>上肢處理（副木篇） - </h3>
-                <span><i class="fas fa-map-marker-alt"></i> Test</span><br>
-                <span><i class="far fa-clock"></i> Nov 03, 2024 </span>
-              </div>
-            </a>
-          </div>
+
+        <div>
+          <h4 class="fst-italic">Recent posts</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Example blog post title</h6>
+                  <small class="text-body-secondary">January 15, 2024</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="col-lg-8">
+                  <h6 class="mb-0">This is another blog post title</h6>
+                  <small class="text-body-secondary">January 14, 2024</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Longer blog post title: This one has multiple lines!</h6>
+                  <small class="text-body-secondary">January 13, 2024</small>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class='col-md-4 text-left'>
-          <div class='outer'>
-            <a href='#'>
-              <div class='upper'>
-              <img src="{% static 'img/h1.png' %}">
-              <div class='innertext'>
-              </div>
-              </div>
-              <div class='lower'>
-                <h3>上肢處理（副木篇） - </h3>
-                <span><i class="fas fa-map-marker-alt"></i> Test</span><br>
-                <span><i class="far fa-clock"></i> Nov 03, 2024 </span>
-              </div>
-            </a>
-          </div>
-        </div>
-</section>
+
+</main>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 {% include 'footer.html' %}
 {% endblock %}
